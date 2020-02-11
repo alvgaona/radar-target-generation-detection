@@ -1,2 +1,3 @@
-# radar-target-generation-and-detection
-A project from Sensor Fusion Nanodegree at Udacity
+# Radar Target Generation and Detection
+
+A project from Sensor Fusion Nanodegree at Udacity.
