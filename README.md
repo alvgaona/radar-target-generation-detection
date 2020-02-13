@@ -108,12 +108,12 @@ Follow up this [link][Offset and Threshold].
 9. Since the cell under test is not located at the edges, due to the training cells occupying the edges, suppress the edges to zero.
 Any cell value that is neither 1 nor a 0, assign it a zero.
 
-[Slope]: RadarTargetGeneration.m#L25
-[Simulation Loop]: RadarTargetGeneration.m#L39
-[Range Measurement]: RadarTargetGeneration.m#L63
-[2D CFAR]: RadarTargetGeneration.m#L81
-[Measure Average Noise]: RadarTargetGeneration.m#L95
-[Offset and Threshold]: RadarTargetGeneration.m#L104
+[Slope]: RadarTargetGenerationDetection.m#L25
+[Simulation Loop]: RadarTargetGenerationDetection.m#L39
+[Range Measurement]: RadarTargetGenerationDetection.m#L63
+[2D CFAR]: RadarTargetGenerationDetection.m#L81
+[Measure Average Noise]: RadarTargetGenerationDetection.m#L95
+[Offset and Threshold]: RadarTargetGenerationDetection.m#L104
 
 [Range First FFT]: images/rangeFirstFFT.png
 [2D FFT]: images/2DFFT.png
