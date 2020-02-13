@@ -91,6 +91,8 @@ Gr = 4;                % Number of guard cells (range dimension)
 Gd = 4;                % Number of guard cells (doppler dimension)
 offset = 10;           % Offset the threshold by SNR [dB]
 
+numTrainingCells = 2 * (Td + Gd + 1) * 2 * (Tr + Gr + 1) - (Gr * Gd) - 1);
+
 result = zeros(size(RDM));
 
 for i = 1 + Tr + Gr : Nr / 2 - (Gr + Tr)
@@ -104,8 +106,7 @@ for i = 1 + Tr + Gr : Nr / 2 - (Gr + Tr)
                 end
             end
         end
-        threshold = pow2db(noise_level / ...
-            (2 * (Td + Gd + 1) * 2 * (Tr + Gr + 1) - (Gr * Gd) - 1));
+        threshold = pow2db(noise_level / numTrainingCells;
         threshold = threshold + offset;
         CUT = RDM(i, j);
         
